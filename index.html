@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vision Estimators — Construction Cost Estimation Experts</title>
+  <meta name="description" content="Vision Estimators delivers precise construction cost estimates and quantity surveying for international projects using industry-leading software." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>try{if(localStorage.getItem('ve-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+</head>
+<body>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">
+        <img src="assets/images/app_logo.png" alt="Vision Estimators" width="36" height="36" />
+        <span class="brand-text"><span class="text-primary">Vision</span> Estimators</span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-link" href="about.html">About</a>
+        <div class="nav-dropdown">
+          <a class="nav-link" href="our-services.html">Services <i data-icon="ChevronDownIcon" data-size="14"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="services.html">Construction Estimating</a>
+            <a href="service-earthwork-estimation.html">Earth Work Estimation</a>
+            <a href="service-roofing-estimation.html">Roofing Estimation</a>
+            <a href="service-sheet-metal-hvac.html">Sheet Metal &amp; HVAC</a>
+            <a href="service-quantity-takeoff.html">Quantity Take-Off</a>
+            <a href="service-tender-bid-management.html">Tender &amp; Bid Management</a>
+            <a href="service-drywall-estimation.html">Drywall Estimation</a>
+            <a href="service-plumbing-estimation.html">Plumbing Estimation</a>
+            <a href="service-electrical-estimation.html">Electrical Estimation</a>
+            <a href="service-facade-cladding.html">Facade &amp; Cladding</a>
+            <a href="service-structural-framing.html">Structural &amp; Framing</a>
+            <a href="our-services.html" class="dropdown-all">View All Services</a>
+          </div>
+        </div>
+        <a class="nav-link" href="why-us.html">Why Us</a>
+        <a class="nav-link" href="industries.html">Industries</a>
+        <a class="nav-link" href="process.html">Process</a>
+      </div>
+      <div class="nav-cta">
+        <button class="theme-toggle" type="button" aria-label="Switch light or dark theme">
+          <span class="icon-moon"><i data-icon="MoonIcon" data-size="18"></i></span>
+          <span class="icon-sun"><i data-icon="SunIcon" data-size="18"></i></span>
+        </button>
+        <a class="btn-primary btn-sm glow-orange" href="contact.html">
+          Get Free Quote
+          <i data-icon="ArrowRightIcon" data-size="16"></i>
+        </a>
+      </div>
+      <button class="theme-toggle theme-toggle-mobile" type="button" aria-label="Switch light or dark theme">
+        <span class="icon-moon"><i data-icon="MoonIcon" data-size="18"></i></span>
+        <span class="icon-sun"><i data-icon="SunIcon" data-size="18"></i></span>
+      </button>
+      <button class="mobile-toggle" aria-label="Open menu">
+        <i data-icon="Bars3Icon" data-size="22"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" role="dialog" aria-modal="true">
+    <button class="close-btn" aria-label="Close menu">
+      <i data-icon="XMarkIcon" data-size="22"></i>
+    </button>
+    <div class="brand-row">
+      <img src="assets/images/app_logo.png" alt="" width="40" height="40" />
+      <span class="brand-text"><span class="text-primary">Vision</span> Estimators</span>
+    </div>
+    <div class="links">
+      <a href="about.html">About</a>
+      <div class="mobile-submenu">
+        <button class="mobile-submenu-toggle" aria-expanded="false">Services <i data-icon="ChevronDownIcon" data-size="18"></i></button>
+        <div class="mobile-submenu-links">
+          <a href="our-services.html">All Services</a>
+          <a href="services.html">Construction Estimating</a>
+          <a href="service-earthwork-estimation.html">Earth Work Estimation</a>
+          <a href="service-roofing-estimation.html">Roofing Estimation</a>
+          <a href="service-sheet-metal-hvac.html">Sheet Metal &amp; HVAC</a>
+          <a href="service-quantity-takeoff.html">Quantity Take-Off</a>
+          <a href="service-tender-bid-management.html">Tender &amp; Bid Management</a>
+          <a href="service-drywall-estimation.html">Drywall Estimation</a>
+          <a href="service-plumbing-estimation.html">Plumbing Estimation</a>
+          <a href="service-electrical-estimation.html">Electrical Estimation</a>
+          <a href="service-facade-cladding.html">Facade &amp; Cladding</a>
+          <a href="service-structural-framing.html">Structural &amp; Framing</a>
+        </div>
+      </div>
+      <a href="why-us.html">Why Us</a>
+      <a href="industries.html">Industries</a>
+      <a href="process.html">Process</a>
+    </div>
+    <a class="btn-primary btn-lg" href="contact.html">
+      Get Free Quote
+      <i data-icon="ArrowRightIcon" data-size="18"></i>
+    </a>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero section">
+      <div class="bg-image">
+        <img src="assets/images/hero-bg.jpg"
+             alt="3D house model on architectural blueprints with measuring tape and pencil" loading="eager" />
+      </div>
+      <div class="blueprint-overlay opacity-40"></div>
+
+      <span class="particle bg-primary"     style="width:4px;height:4px;top:15%;left:8%;animation-delay:0s;animation-duration:5s;"></span>
+      <span class="particle bg-accent"      style="width:3px;height:3px;top:30%;left:92%;animation-delay:1s;animation-duration:6s;"></span>
+      <span class="particle bg-primary-60"  style="width:5px;height:5px;top:65%;left:5%;animation-delay:2s;animation-duration:7s;"></span>
+      <span class="particle bg-accent-60"   style="width:3px;height:3px;top:80%;left:88%;animation-delay:.5s;animation-duration:8s;"></span>
+      <span class="particle bg-primary"     style="width:4px;height:4px;top:45%;left:95%;animation-delay:1.5s;animation-duration:9s;"></span>
+      <span class="particle bg-accent"      style="width:2px;height:2px;top:20%;left:75%;animation-delay:2.5s;animation-duration:10s;"></span>
+
+      <div class="accent-shape" aria-hidden="true"></div>
+
+      <div class="content">
+        <div class="animate-enter" style="animation-delay:200ms">
+          <span class="section-label" style="margin-bottom:0">
+            <span class="dot"></span>
+            Worldwide Projects
+          </span>
+        </div>
+        <h1 class="hero-text-xl animate-enter" style="margin-top:1rem;animation-delay:350ms;max-width:64rem;">
+          Precision Cost <span class="gradient-text-orange">Estimation</span><br />
+          Built for <span class="text-accent">Construction</span>
+        </h1>
+        <p class="subhead animate-enter" style="animation-delay:500ms">
+          Vision Estimators delivers fast, accurate quantity surveys and cost estimates
+          for residential, commercial, and industrial projects worldwide, the USA, the UK, Canada and New Zealand.
+        </p>
+        <div class="ctas animate-enter" style="animation-delay:650ms">
+          <a class="btn-primary btn-lg glow-orange" href="contact.html">
+            Get Free Quote
+            <i data-icon="ArrowRightIcon" data-size="18"></i>
+          </a>
+          <a class="btn-secondary btn-lg" href="our-services.html">
+            Our Services
+            <i data-icon="ChevronDownIcon" data-size="18"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="line"></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="blueprint-overlay"></div>
+      <div class="container" style="position:relative;z-index:1">
+        <div class="section-header">
+          <span class="section-label reveal"><i data-icon="WrenchScrewdriverIcon" data-size="14"></i> What We Offer</span>
+          <h2 class="section-title reveal">Construction <span class="gradient-text-orange">Estimating</span></h2>
+          <p class="section-subtitle reveal delay-200">Precision takeoffs and tender-ready estimates that protect your margins.</p>
+        </div>
+        <div class="ce-feature reveal delay-200">
+          <div class="ce-feature-left">
+            <div class="icon-wrap"><i data-icon="BuildingOffice2Icon" data-size="28" data-class="text-primary"></i></div>
+            <h3>Estimates you can tender on</h3>
+            <p>Accurate construction estimating for residential, commercial, industrial, and civil projects worldwide. We prepare BOQs, material takeoffs, labour analysis, and scope breakdowns straight from your drawings — so you can tender confidently, control costs, and protect your margins.</p>
+            <div class="ce-tags">
+              <span class="tag">BOQs</span><span class="tag">Material Takeoffs</span><span class="tag">Labour Analysis</span><span class="tag">Scope Breakdowns</span>
+            </div>
+            <a class="btn-primary btn-lg glow-orange" href="our-services.html" style="margin-top:1.75rem">
+              View All Services
+              <i data-icon="ArrowRightIcon" data-size="18"></i>
+            </a>
+          </div>
+          <ul class="ce-feature-list">
+            <li><i data-icon="CheckIcon" data-size="20" data-class="text-primary"></i><div><strong>Residential &amp; Commercial</strong><span>Homes, units, retail, offices and fit-outs.</span></div></li>
+            <li><i data-icon="CheckIcon" data-size="20" data-class="text-primary"></i><div><strong>Industrial &amp; Civil</strong><span>Warehouses, factories, roads and infrastructure.</span></div></li>
+            <li><i data-icon="CheckIcon" data-size="20" data-class="text-primary"></i><div><strong>Detailed BOQs</strong><span>Itemised quantities ready for pricing.</span></div></li>
+            <li><i data-icon="CheckIcon" data-size="20" data-class="text-primary"></i><div><strong>Margin Protection</strong><span>Catch scope gaps before they cost you.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="section industries-section" id="industries">
+      <div class="container">
+        <div class="industries-header">
+          <div>
+            <span class="section-label reveal"><i data-icon="BuildingOffice2Icon" data-size="14"></i> Industries We Serve</span>
+            <h2 class="section-title reveal">Every Sector, <span class="gradient-text-orange">Every Scale</span></h2>
+          </div>
+          <p class="reveal delay-200">From single-family homes to multi-billion infrastructure projects — our expertise spans all construction sectors.</p>
+        </div>
+
+        <div class="industries-grid">
+          <div class="industry-card span-2 reveal">
+            <img src="assets/images/photo-1643993824808-081e8f8f1a37.jpg" alt="Residential construction site with timber framing and concrete slab" />
+            <div class="scrim"></div>
+            <div class="caption">
+              <span class="sub text-primary">Houses, units, townhouses &amp; apartments</span>
+              <h3>Residential</h3>
+            </div>
+          </div>
+          <div class="industry-card row-span-2 reveal delay-200">
+            <img src="assets/images/photo-1600246029718-f61e4b9a1d08.jpg" alt="Modern commercial office building under construction with glass facade" />
+            <div class="scrim"></div>
+            <div class="caption">
+              <span class="sub text-accent">Offices, retail &amp; mixed-use developments</span>
+              <h3>Commercial</h3>
+            </div>
+          </div>
+          <div class="industry-card reveal delay-100">
+            <img src="assets/images/rocket_gen_img_1b9c568c5-1772102912777.png" alt="Industrial warehouse construction with steel portal frames" />
+            <div class="scrim"></div>
+            <div class="caption">
+              <span class="sub text-primary">Warehouses, factories &amp; logistics</span>
+              <h3>Industrial</h3>
+            </div>
+          </div>
+          <div class="industry-card reveal delay-200">
+            <img src="assets/images/photo-1697780193303-3a0524a404ea.jpg" alt="Highway bridge construction with concrete pillars and steel girders" />
+            <div class="scrim"></div>
+            <div class="caption">
+              <span class="sub text-accent">Roads, bridges &amp; utilities</span>
+              <h3>Civil &amp; Infrastructure</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="grid-pattern opacity-40"></div>
+      <div class="container" style="position:relative;z-index:1">
+        <div class="section-header">
+          <span class="section-label reveal"><i data-icon="StarIcon" data-size="14"></i> Client Results</span>
+          <h2 class="section-title reveal">Trusted by <span class="gradient-text-orange">Industry Leaders</span></h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="stars">
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+            </div>
+            <blockquote>&ldquo;Vision Estimators saved us 3 weeks of in-house estimation on our $12M commercial development. Their accuracy was within 1.2% of the final contract sum.&rdquo;</blockquote>
+            <div class="author">
+              <div class="avatar"><img src="assets/images/rocket_gen_img_15814a2bd-1769178642620.png" alt="James Whitfield" /></div>
+              <div>
+                <p class="name">James Whitfield</p>
+                <p class="role">Project Director</p>
+                <p class="company">Whitfield Constructions, Melbourne, AU</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal delay-100">
+            <div class="stars">
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+            </div>
+            <blockquote>&ldquo;The turnaround speed is unmatched. We submitted a competitive tender with a 48-hour estimate that was detailed enough to win a $4.5M roofing contract.&rdquo;</blockquote>
+            <div class="author">
+              <div class="avatar"><img src="assets/images/rocket_gen_img_129aa0f06-1768100319124.png" alt="Sarah Nguyen" /></div>
+              <div>
+                <p class="name">Sarah Nguyen</p>
+                <p class="role">Estimating Manager</p>
+                <p class="company">Pacific Roofing Group, London, UK</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal delay-200">
+            <div class="stars">
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
+            </div>
+            <blockquote>&ldquo;We&rsquo;ve used Vision Estimators across 8 civil infrastructure projects. Their QTO work on our highway interchange saved us from a costly underquote.&rdquo;</blockquote>
+            <div class="author">
+              <div class="avatar"><img src="assets/images/rocket_gen_img_110286827-1778380574212.png" alt="Mark Tran" /></div>
+              <div>
+                <p class="name">Mark Tran</p>
+                <p class="role">Senior Estimator</p>
+                <p class="company">Tran Civil Engineering, Houston, USA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA banner -->
+    <section class="cta-banner-wrap">
+      <div class="grid-pattern"></div>
+      <div class="blob blob-primary tr"></div>
+      <div class="blob blob-accent bl"></div>
+      <div class="cta-banner">
+        <div class="panel">
+          <span class="section-label reveal"><i data-icon="BoltIcon" data-size="14"></i> Ready to Start?</span>
+          <h2 class="section-title reveal">Get Your <span class="gradient-text-orange">Free Estimate</span> Today</h2>
+          <p class="section-subtitle reveal delay-200" style="margin-top:1rem;margin-bottom:2.5rem;">Send us your drawings and we&rsquo;ll deliver a detailed cost estimate within 48 hours. No obligation.</p>
+          <div class="ctas reveal delay-300">
+            <a class="btn-primary btn-lg glow-orange" href="contact.html">
+              Request Free Quote
+              <i data-icon="ArrowRightIcon" data-size="18"></i>
+            </a>
+            <a class="btn-secondary btn-lg" href="mailto:info@visionestimators.com">
+              <i data-icon="EnvelopeIcon" data-size="18"></i>
+              info@visionestimators.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand-link" href="index.html">
+            <img src="assets/images/app_logo.png" alt="Vision Estimators" width="40" height="40" />
+            <span class="brand-name"><span class="text-primary">Vision</span> Estimators</span>
+          </a>
+          <p class="brand-desc">Accurate construction estimation, quantity surveying, BOQ preparation, and tender support for builders and contractors worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">SERVICES</h4>
+          <ul>
+            <li><a href="services.html">Construction Estimating</a></li>
+            <li><a href="service-earthwork-estimation.html">Earth Work Estimation</a></li>
+            <li><a href="service-roofing-estimation.html">Roofing Estimation</a></li>
+            <li><a href="service-sheet-metal-hvac.html">Sheet Metal &amp; HVAC</a></li>
+            <li><a href="service-quantity-takeoff.html">Quantity Take-Off</a></li>
+            <li><a href="service-tender-bid-management.html">Tender &amp; Bid Management</a></li>
+            <li><a href="service-drywall-estimation.html">Drywall Estimation</a></li>
+            <li><a href="service-plumbing-estimation.html">Plumbing Estimation</a></li>
+            <li><a href="service-electrical-estimation.html">Electrical Estimation</a></li>
+            <li><a href="service-facade-cladding.html">Facade &amp; Cladding</a></li>
+            <li><a href="service-structural-framing.html">Structural &amp; Framing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">COMPANY</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="why-us.html">Why Choose Us</a></li>
+            <li><a href="process.html">Our Process</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="our-services.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">CONTACT</h4>
+          <ul class="footer-contact">
+            <li><a href="mailto:info@visionestimators.com"><i data-icon="EnvelopeIcon" data-size="14"></i> info@visionestimators.com</a></li>
+            <li><a href="https://www.visionestimators.com"><i data-icon="GlobeAltIcon" data-size="14"></i> www.visionestimators.com</a></li>
+            <li class="address"><i data-icon="MapPinIcon" data-size="14"></i><span>Serving clients worldwide from India<br/>AU &middot; US &middot; UK &middot; CA &middot; NZ &middot; &amp; beyond</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vision Estimators. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-service.html">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <i data-icon="ChevronDownIcon" data-size="20"></i>
+  </button>
+
+  <script src="js/icons.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
