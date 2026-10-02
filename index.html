@@ -1,392 +1,642 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vision Estimators — Construction Cost Estimation Experts</title>
-  <meta name="description" content="Vision Estimators delivers precise construction cost estimates and quantity surveying for international projects using industry-leading software." />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="assets/fonts/fonts.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <script>try{if(localStorage.getItem('ve-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contractor Estimating &amp; Takeoff Services | Vision Estimators</title>
+<meta name="description" content="Trade estimates and quantity takeoffs for contractors and subcontractors — roofing, cladding, structural, electrical, plumbing and whole building estimating.">
+<link rel="canonical" href="https://www.visionestimators.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vision Estimators">
+<meta property="og:title" content="Contractor Estimating &amp; Takeoff Services | Vision Estimators">
+<meta property="og:description" content="Trade estimates and quantity takeoffs for contractors and subcontractors — roofing, cladding, structural, electrical, plumbing and whole building estimating.">
+<meta property="og:url" content="https://www.visionestimators.com/">
+<meta property="og:image" content="https://www.visionestimators.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vision Estimators — construction estimating and quantity surveying">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contractor Estimating &amp; Takeoff Services | Vision Estimators">
+<meta name="twitter:description" content="Trade estimates and quantity takeoffs for contractors and subcontractors — roofing, cladding, structural, electrical, plumbing and whole building estimating.">
+<meta name="twitter:image" content="https://www.visionestimators.com/assets/img/og-image.jpg">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/plexsans-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="css/main.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://www.visionestimators.com/#organization","name":"Vision Estimators","url":"https://www.visionestimators.com/","logo":"https://www.visionestimators.com/assets/img/logo-512.png","image":"https://www.visionestimators.com/assets/img/og-image.jpg","email":"info@visionestimators.com","description":"Trade estimating and takeoff services for contractors and subcontractors — roofing, cladding, structural, electrical, plumbing and whole building estimates — for builders and contractors in Australia, the USA, the UK, Canada and New Zealand.","address":{"@type":"PostalAddress","streetAddress":"Plot No 57, Ground Floor, LP Tower, Hitech City Road, Madhapur","addressLocality":"Hyderabad","addressRegion":"Telangana","postalCode":"500081","addressCountry":"IN"},"areaServed":[{"@type":"Country","name":"Australia"},{"@type":"Country","name":"United States"},{"@type":"Country","name":"United Kingdom"},{"@type":"Country","name":"Canada"},{"@type":"Country","name":"New Zealand"}],"parentOrganization":{"@type":"Organization","name":"Remote Teams IT Solutions","url":"https://remote-teams.in/"},"knowsAbout":["Roofing estimating","Cladding estimating","Structural estimating","Electrical estimating","Plumbing estimating","Whole building estimating","Quantity takeoff","Bill of Quantities","Cost estimating","Tender estimating"]},{"@type":"WebSite","@id":"https://www.visionestimators.com/#website","url":"https://www.visionestimators.com/","name":"Vision Estimators","publisher":{"@id":"https://www.visionestimators.com/#organization"}}]}</script>
 </head>
 <body>
-
-  <!-- Scroll progress -->
-  <div class="scroll-progress-bar" aria-hidden="true"></div>
-
-  <!-- Header -->
-  <header class="site-header">
-    <nav class="nav">
-      <a class="nav-brand" href="index.html">
-        <img src="assets/images/app_logo.png" alt="Vision Estimators" width="36" height="36" />
-        <span class="brand-text"><span class="text-primary">Vision</span> Estimators</span>
-      </a>
-      <div class="nav-links">
-        <a class="nav-link" href="about.html">About</a>
-        <div class="nav-dropdown">
-          <a class="nav-link" href="our-services.html">Services <i data-icon="ChevronDownIcon" data-size="14"></i></a>
-          <div class="nav-dropdown-menu">
-            <a href="services.html">Construction Estimating</a>
-            <a href="service-earthwork-estimation.html">Earth Work Estimation</a>
-            <a href="service-roofing-estimation.html">Roofing Estimation</a>
-            <a href="service-sheet-metal-hvac.html">Sheet Metal &amp; HVAC</a>
-            <a href="service-quantity-takeoff.html">Quantity Take-Off</a>
-            <a href="service-tender-bid-management.html">Tender &amp; Bid Management</a>
-            <a href="service-drywall-estimation.html">Drywall Estimation</a>
-            <a href="service-plumbing-estimation.html">Plumbing Estimation</a>
-            <a href="service-electrical-estimation.html">Electrical Estimation</a>
-            <a href="service-facade-cladding.html">Facade &amp; Cladding</a>
-            <a href="service-structural-framing.html">Structural &amp; Framing</a>
-            <a href="our-services.html" class="dropdown-all">View All Services</a>
-          </div>
-        </div>
-        <a class="nav-link" href="why-us.html">Why Us</a>
-        <a class="nav-link" href="industries.html">Industries</a>
-        <a class="nav-link" href="process.html">Process</a>
-      </div>
-      <div class="nav-cta">
-        <button class="theme-toggle" type="button" aria-label="Switch light or dark theme">
-          <span class="icon-moon"><i data-icon="MoonIcon" data-size="18"></i></span>
-          <span class="icon-sun"><i data-icon="SunIcon" data-size="18"></i></span>
-        </button>
-        <a class="btn-primary btn-sm glow-orange" href="contact.html">
-          Get Free Quote
-          <i data-icon="ArrowRightIcon" data-size="16"></i>
-        </a>
-      </div>
-      <button class="theme-toggle theme-toggle-mobile" type="button" aria-label="Switch light or dark theme">
-        <span class="icon-moon"><i data-icon="MoonIcon" data-size="18"></i></span>
-        <span class="icon-sun"><i data-icon="SunIcon" data-size="18"></i></span>
-      </button>
-      <button class="mobile-toggle" aria-label="Open menu">
-        <i data-icon="Bars3Icon" data-size="22"></i>
-      </button>
-    </nav>
-  </header>
-
-  <!-- Mobile menu -->
-  <div class="mobile-menu" role="dialog" aria-modal="true">
-    <button class="close-btn" aria-label="Close menu">
-      <i data-icon="XMarkIcon" data-size="22"></i>
-    </button>
-    <div class="brand-row">
-      <img src="assets/images/app_logo.png" alt="" width="40" height="40" />
-      <span class="brand-text"><span class="text-primary">Vision</span> Estimators</span>
-    </div>
-    <div class="links">
-      <a href="about.html">About</a>
-      <div class="mobile-submenu">
-        <button class="mobile-submenu-toggle" aria-expanded="false">Services <i data-icon="ChevronDownIcon" data-size="18"></i></button>
-        <div class="mobile-submenu-links">
-          <a href="our-services.html">All Services</a>
-          <a href="services.html">Construction Estimating</a>
-          <a href="service-earthwork-estimation.html">Earth Work Estimation</a>
-          <a href="service-roofing-estimation.html">Roofing Estimation</a>
-          <a href="service-sheet-metal-hvac.html">Sheet Metal &amp; HVAC</a>
-          <a href="service-quantity-takeoff.html">Quantity Take-Off</a>
-          <a href="service-tender-bid-management.html">Tender &amp; Bid Management</a>
-          <a href="service-drywall-estimation.html">Drywall Estimation</a>
-          <a href="service-plumbing-estimation.html">Plumbing Estimation</a>
-          <a href="service-electrical-estimation.html">Electrical Estimation</a>
-          <a href="service-facade-cladding.html">Facade &amp; Cladding</a>
-          <a href="service-structural-framing.html">Structural &amp; Framing</a>
-        </div>
-      </div>
-      <a href="why-us.html">Why Us</a>
-      <a href="industries.html">Industries</a>
-      <a href="process.html">Process</a>
-    </div>
-    <a class="btn-primary btn-lg" href="contact.html">
-      Get Free Quote
-      <i data-icon="ArrowRightIcon" data-size="18"></i>
-    </a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="Vision Estimators — home"><img class="brand__logo" src="assets/img/logo.png" alt="Vision Estimators" width="635" height="132"></a>
+    <nav class="nav" aria-label="Primary"><ul class="nav__list"><li><a class="nav__link" href="services.html">Services</a></li><li><a class="nav__link" href="dedicated-estimator.html">Dedicated Estimator</a></li><li><a class="nav__link" href="about.html">About Us</a></li><li><a class="nav__link" href="contact.html">Contact</a></li></ul></nav>
+    <a class="btn btn--primary btn--sm header__cta" href="contact.html">Get a Free Estimate</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
   </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+  <nav aria-label="Mobile"><ul class="mobile-menu__list"><li><a href="services.html" style="--i:0"><span>01</span>Services</a></li><li><a href="dedicated-estimator.html" style="--i:1"><span>02</span>Dedicated Estimator</a></li><li><a href="about.html" style="--i:2"><span>03</span>About Us</a></li><li><a href="contact.html" style="--i:3"><span>04</span>Contact</a></li></ul></nav>
+  <div class="mobile-menu__foot">
+    <a class="btn btn--primary btn--lg btn--block" href="contact.html">Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="btn btn--ghost btn--lg btn--block" href="contact.html?service=dedicated-estimator">Talk to an Estimator</a>
+    <div class="mobile-menu__meta"><a href="mailto:info@visionestimators.com">info@visionestimators.com</a><a href="faq.html">FAQ</a><a href="projects.html">Projects</a></div>
+  </div>
+</div>
+<main id="main">
 
-  <main>
-
-    <!-- Hero -->
-    <section class="hero" aria-label="Hero section">
-      <div class="bg-image">
-        <img src="assets/images/hero-bg.jpg"
-             alt="3D house model on architectural blueprints with measuring tape and pencil" loading="eager" />
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="scene hero__scene" data-scene="hero" aria-hidden="true">
+    <picture>
+      <source media="(max-width: 900px)" srcset="assets/img/hero-3d-mobile.webp">
+      <img class="scene-fallback" src="assets/img/hero-3d.webp" alt="" width="1920" height="1080" fetchpriority="high" decoding="async">
+    </picture>
+    <div class="scene-labels"><div class="tag" data-anchor="qto"><div class="tag__chip"><span class="tag__k">QTO</span><span class="tag__v">Bulk excavation · 2,040 m³</span></div></div><div class="tag" data-anchor="boq"><div class="tag__chip"><span class="tag__k">BOQ</span><span class="tag__v">External works · Section 04</span></div></div><div class="tag" data-anchor="materials"><div class="tag__chip"><span class="tag__k">MATERIALS</span><span class="tag__v">Structural steel · 18.6 t</span></div></div><div class="tag" data-anchor="labour"><div class="tag__chip"><span class="tag__k">LABOUR</span><span class="tag__v">Plant &amp; labour · 320 h</span></div></div><div class="tag" data-anchor="cost"><div class="tag__chip"><span class="tag__k">COST</span><span class="tag__v">Concrete works · Rates applied</span></div></div><div class="tag" data-anchor="takeoff"><div class="tag__chip"><span class="tag__k">TAKEOFF</span><span class="tag__v">Frame · Levels 01–07</span></div></div></div>
+  </div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <div class="hero__hud" aria-hidden="true">
+    <span class="hud-corner hud-corner--tl"></span><span class="hud-corner hud-corner--tr"></span><span class="hud-corner hud-corner--bl"></span><span class="hud-corner hud-corner--br"></span>
+    <p class="hud-live"><i></i>Site model · Live</p>
+    <div class="hud-read">
+      <div class="hud-coords"><p><span>CAM X</span> <b data-hud-x>118.40</b></p><p><span>CAM Y</span> <b data-hud-y>58.20</b></p><p><span>CAM Z</span> <b data-hud-z>142.75</b></p></div>
+      <div class="hud-compass"><svg viewBox="0 0 34 34" data-hud-az><circle cx="17" cy="17" r="14.5" fill="none" stroke="rgba(140,180,230,.28)"/><path d="M17 5.5 19.6 17h-5.2z" fill="#45d3ff"/><path d="M17 28.5 14.4 17h5.2z" fill="rgba(140,180,230,.4)"/></svg></div>
+    </div>
+  </div>
+  <div class="container hero__content">
+    <div class="hero__copy">
+      <p class="eyebrow" data-in style="--d:0">Contractor &amp; subcontractor estimating</p>
+      <h1 class="hero__title" id="hero-title"><span class="ln"><span style="--d:0">Precision Estimating.</span></span><span class="ln"><span class="accent" style="--d:120">Built for Contractors.</span></span></h1>
+      <p class="hero__lead" data-in style="--d:260">Trade takeoffs and estimates for contractors and subcontractors — roofing, cladding, structural, electrical and plumbing, or the whole building — ready to price.</p>
+      <div class="btn-row" data-in style="--d:380">
+        <a class="btn btn--primary btn--lg" href="contact.html">Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost btn--lg" href="contact.html?service=dedicated-estimator">Talk to an Estimator</a>
       </div>
-      <div class="blueprint-overlay opacity-40"></div>
+      <p class="hero__trust" data-in style="--d:500"><span>Roofing</span><i></i><span>Cladding</span><i></i><span>Structural</span><i></i><span>Electrical</span><i></i><span>Plumbing</span></p>
+    </div>
+  </div>
+  <div class="hero__ticker" aria-hidden="true"><div class="container"><div class="ticker"><span class="ticker__item" data-key="qto">QTO</span><span class="ticker__item" data-key="boq">BOQ</span><span class="ticker__item" data-key="materials">MATERIALS</span><span class="ticker__item" data-key="labour">LABOUR</span><span class="ticker__item" data-key="cost">COST</span><span class="ticker__item" data-key="takeoff">TAKEOFF</span></div></div></div>
+</section>
 
-      <span class="particle bg-primary"     style="width:4px;height:4px;top:15%;left:8%;animation-delay:0s;animation-duration:5s;"></span>
-      <span class="particle bg-accent"      style="width:3px;height:3px;top:30%;left:92%;animation-delay:1s;animation-duration:6s;"></span>
-      <span class="particle bg-primary-60"  style="width:5px;height:5px;top:65%;left:5%;animation-delay:2s;animation-duration:7s;"></span>
-      <span class="particle bg-accent-60"   style="width:3px;height:3px;top:80%;left:88%;animation-delay:.5s;animation-duration:8s;"></span>
-      <span class="particle bg-primary"     style="width:4px;height:4px;top:45%;left:95%;animation-delay:1.5s;animation-duration:9s;"></span>
-      <span class="particle bg-accent"      style="width:2px;height:2px;top:20%;left:75%;animation-delay:2.5s;animation-duration:10s;"></span>
+<section class="stats" aria-label="Vision Estimators at a glance">
+  <div class="container">
+    <div class="stats__grid">
+      <div class="stat" data-reveal><span class="stat__tick"></span><p class="stat__num"><span data-count="48">48</span><span class="stat__unit">hrs</span></p><p class="stat__label">Typical turnaround · standard estimates</p></div>
+      <div class="stat" data-reveal style="--d:80"><span class="stat__tick"></span><p class="stat__num"><span data-count="5">5</span><span class="stat__unit">+</span></p><p class="stat__label">Years serving clients worldwide</p></div>
+      <div class="stat" data-reveal style="--d:160"><span class="stat__tick"></span><p class="stat__num"><span data-count="5">5</span></p><p class="stat__label">Core markets · AU · US · UK · CA · NZ</p></div>
+      <div class="stat" data-reveal style="--d:240"><span class="stat__tick"></span><p class="stat__num"><span data-count="100">100</span><span class="stat__unit">%</span></p><p class="stat__label">Engineering-qualified estimators</p></div>
+    </div>
+  </div>
+</section>
 
-      <div class="accent-shape" aria-hidden="true"></div>
+<section class="section" id="who-we-are" aria-labelledby="intro-title">
+  <div class="container intro">
+    <div class="mosaic" data-reveal>
+      <figure><img src="assets/img/intro-1-1200.webp" srcset="assets/img/intro-1-640.webp 640w, assets/img/intro-1-1200.webp 1200w" sizes="(max-width: 960px) 60vw, 30vw" alt="Construction professional writing quantities on a clipboard over a site plan" width="1200" height="900" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/img/intro-2-640.webp" srcset="assets/img/intro-2-640.webp 640w, assets/img/intro-2-1200.webp 1200w" sizes="(max-width: 960px) 40vw, 20vw" alt="Top-down drone view of a commercial building site" width="1200" height="900" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/img/intro-3-640.webp" srcset="assets/img/intro-3-640.webp 640w, assets/img/intro-3-1200.webp 1200w" sizes="(max-width: 960px) 40vw, 20vw" alt="Blue-line architectural floor plan under a measuring ruler" width="1200" height="900" loading="lazy" decoding="async"></figure>
+      <div class="mosaic__badge"><span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 16.5 16.5 3.5l4 4L7.5 20.5z"/><path d="m7 13 2 2M9.5 10.5l1.5 1.5M12 8l2 2M14.5 5.5 16 7"/></svg></span><span><b>Drawings → Quantities → Cost</b>Structured, traceable estimates</span></div>
+    </div>
+    <div class="stack-lg">
+      <div class="stack" data-reveal><p class="eyebrow">Who we are</p><h2 class="h2" id="intro-title">Estimating Support From People Who Understand Your Trade</h2></div>
+      <p class="lead" data-reveal>We work from your drawings, specifications and scope of works to prepare trade takeoffs, BOQs and estimates that you can check, price and tender with — for a single job or as an ongoing part of your estimating team.</p>
+      <div data-reveal><ul class="two-col-list"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Quantities traceable to every drawing</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Estimates in your templates and formats</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Roofing, cladding, structural and services trades</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Project-based or dedicated support</span></li></ul></div>
+      <div class="btn-row" data-reveal><a class="btn btn--primary" href="contact.html">Send Your Drawings <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M4 15v3.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V15"/></svg></a><a class="btn btn--ghost" href="about.html">About Us</a></div>
+    </div>
+  </div>
+</section>
 
-      <div class="content">
-        <div class="animate-enter" style="animation-delay:200ms">
-          <span class="section-label" style="margin-bottom:0">
-            <span class="dot"></span>
-            Worldwide Projects
-          </span>
-        </div>
-        <h1 class="hero-text-xl animate-enter" style="margin-top:1rem;animation-delay:350ms;max-width:64rem;">
-          Precision Cost <span class="gradient-text-orange">Estimation</span><br />
-          Built for <span class="text-accent">Construction</span>
-        </h1>
-        <p class="subhead animate-enter" style="animation-delay:500ms">
-          Vision Estimators delivers fast, accurate quantity surveys and cost estimates
-          for residential, commercial, and industrial projects worldwide, the USA, the UK, Canada and New Zealand.
-        </p>
-        <div class="ctas animate-enter" style="animation-delay:650ms">
-          <a class="btn-primary btn-lg glow-orange" href="contact.html">
-            Get Free Quote
-            <i data-icon="ArrowRightIcon" data-size="18"></i>
-          </a>
-          <a class="btn-secondary btn-lg" href="our-services.html">
-            Our Services
-            <i data-icon="ChevronDownIcon" data-size="18"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="scroll-indicator">
-        <span>Scroll</span>
-        <div class="line"></div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section class="section" id="services">
-      <div class="blueprint-overlay"></div>
-      <div class="container" style="position:relative;z-index:1">
-        <div class="section-header">
-          <span class="section-label reveal"><i data-icon="WrenchScrewdriverIcon" data-size="14"></i> What We Offer</span>
-          <h2 class="section-title reveal">Construction <span class="gradient-text-orange">Estimating</span></h2>
-          <p class="section-subtitle reveal delay-200">Precision takeoffs and tender-ready estimates that protect your margins.</p>
-        </div>
-        <div class="ce-feature reveal delay-200">
-          <div class="ce-feature-left">
-            <div class="icon-wrap"><i data-icon="BuildingOffice2Icon" data-size="28" data-class="text-primary"></i></div>
-            <h3>Estimates you can tender on</h3>
-            <p>Accurate construction estimating for residential, commercial, industrial, and civil projects worldwide. We prepare BOQs, material takeoffs, labour analysis, and scope breakdowns straight from your drawings — so you can tender confidently, control costs, and protect your margins.</p>
-            <div class="ce-tags">
-              <span class="tag">BOQs</span><span class="tag">Material Takeoffs</span><span class="tag">Labour Analysis</span><span class="tag">Scope Breakdowns</span>
-            </div>
-            <a class="btn-primary btn-lg glow-orange" href="our-services.html" style="margin-top:1.75rem">
-              View All Services
-              <i data-icon="ArrowRightIcon" data-size="18"></i>
-            </a>
-          </div>
-          <ul class="ce-feature-list">
-            <li><i data-icon="CheckIcon" data-size="20" data-class="text-primary"></i><div><strong>Residential &amp; Commercial</strong><span>Homes, units, retail, offices and fit-outs.</span></div></li>
-            <li><i data-icon="CheckIcon" data-size="20" data-class="text-primary"></i><div><strong>Industrial &amp; Civil</strong><span>Warehouses, factories, roads and infrastructure.</span></div></li>
-            <li><i data-icon="CheckIcon" data-size="20" data-class="text-primary"></i><div><strong>Detailed BOQs</strong><span>Itemised quantities ready for pricing.</span></div></li>
-            <li><i data-icon="CheckIcon" data-size="20" data-class="text-primary"></i><div><strong>Margin Protection</strong><span>Catch scope gaps before they cost you.</span></div></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Industries -->
-    <section class="section industries-section" id="industries">
-      <div class="container">
-        <div class="industries-header">
-          <div>
-            <span class="section-label reveal"><i data-icon="BuildingOffice2Icon" data-size="14"></i> Industries We Serve</span>
-            <h2 class="section-title reveal">Every Sector, <span class="gradient-text-orange">Every Scale</span></h2>
-          </div>
-          <p class="reveal delay-200">From single-family homes to multi-billion infrastructure projects — our expertise spans all construction sectors.</p>
-        </div>
-
-        <div class="industries-grid">
-          <div class="industry-card span-2 reveal">
-            <img src="assets/images/photo-1643993824808-081e8f8f1a37.jpg" alt="Residential construction site with timber framing and concrete slab" />
-            <div class="scrim"></div>
-            <div class="caption">
-              <span class="sub text-primary">Houses, units, townhouses &amp; apartments</span>
-              <h3>Residential</h3>
-            </div>
-          </div>
-          <div class="industry-card row-span-2 reveal delay-200">
-            <img src="assets/images/photo-1600246029718-f61e4b9a1d08.jpg" alt="Modern commercial office building under construction with glass facade" />
-            <div class="scrim"></div>
-            <div class="caption">
-              <span class="sub text-accent">Offices, retail &amp; mixed-use developments</span>
-              <h3>Commercial</h3>
-            </div>
-          </div>
-          <div class="industry-card reveal delay-100">
-            <img src="assets/images/rocket_gen_img_1b9c568c5-1772102912777.png" alt="Industrial warehouse construction with steel portal frames" />
-            <div class="scrim"></div>
-            <div class="caption">
-              <span class="sub text-primary">Warehouses, factories &amp; logistics</span>
-              <h3>Industrial</h3>
-            </div>
-          </div>
-          <div class="industry-card reveal delay-200">
-            <img src="assets/images/photo-1697780193303-3a0524a404ea.jpg" alt="Highway bridge construction with concrete pillars and steel girders" />
-            <div class="scrim"></div>
-            <div class="caption">
-              <span class="sub text-accent">Roads, bridges &amp; utilities</span>
-              <h3>Civil &amp; Infrastructure</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section" id="testimonials">
-      <div class="grid-pattern opacity-40"></div>
-      <div class="container" style="position:relative;z-index:1">
-        <div class="section-header">
-          <span class="section-label reveal"><i data-icon="StarIcon" data-size="14"></i> Client Results</span>
-          <h2 class="section-title reveal">Trusted by <span class="gradient-text-orange">Industry Leaders</span></h2>
-        </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card reveal">
-            <div class="stars">
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-            </div>
-            <blockquote>&ldquo;Vision Estimators saved us 3 weeks of in-house estimation on our $12M commercial development. Their accuracy was within 1.2% of the final contract sum.&rdquo;</blockquote>
-            <div class="author">
-              <div class="avatar"><img src="assets/images/rocket_gen_img_15814a2bd-1769178642620.png" alt="James Whitfield" /></div>
-              <div>
-                <p class="name">James Whitfield</p>
-                <p class="role">Project Director</p>
-                <p class="company">Whitfield Constructions, Melbourne, AU</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card reveal delay-100">
-            <div class="stars">
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-            </div>
-            <blockquote>&ldquo;The turnaround speed is unmatched. We submitted a competitive tender with a 48-hour estimate that was detailed enough to win a $4.5M roofing contract.&rdquo;</blockquote>
-            <div class="author">
-              <div class="avatar"><img src="assets/images/rocket_gen_img_129aa0f06-1768100319124.png" alt="Sarah Nguyen" /></div>
-              <div>
-                <p class="name">Sarah Nguyen</p>
-                <p class="role">Estimating Manager</p>
-                <p class="company">Pacific Roofing Group, London, UK</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card reveal delay-200">
-            <div class="stars">
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-              <i data-icon="StarIcon" data-variant="solid" data-size="16"></i>
-            </div>
-            <blockquote>&ldquo;We&rsquo;ve used Vision Estimators across 8 civil infrastructure projects. Their QTO work on our highway interchange saved us from a costly underquote.&rdquo;</blockquote>
-            <div class="author">
-              <div class="avatar"><img src="assets/images/rocket_gen_img_110286827-1778380574212.png" alt="Mark Tran" /></div>
-              <div>
-                <p class="name">Mark Tran</p>
-                <p class="role">Senior Estimator</p>
-                <p class="company">Tran Civil Engineering, Houston, USA</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA banner -->
-    <section class="cta-banner-wrap">
-      <div class="grid-pattern"></div>
-      <div class="blob blob-primary tr"></div>
-      <div class="blob blob-accent bl"></div>
-      <div class="cta-banner">
-        <div class="panel">
-          <span class="section-label reveal"><i data-icon="BoltIcon" data-size="14"></i> Ready to Start?</span>
-          <h2 class="section-title reveal">Get Your <span class="gradient-text-orange">Free Estimate</span> Today</h2>
-          <p class="section-subtitle reveal delay-200" style="margin-top:1rem;margin-bottom:2.5rem;">Send us your drawings and we&rsquo;ll deliver a detailed cost estimate within 48 hours. No obligation.</p>
-          <div class="ctas reveal delay-300">
-            <a class="btn-primary btn-lg glow-orange" href="contact.html">
-              Request Free Quote
-              <i data-icon="ArrowRightIcon" data-size="18"></i>
-            </a>
-            <a class="btn-secondary btn-lg" href="mailto:info@visionestimators.com">
-              <i data-icon="EnvelopeIcon" data-size="18"></i>
-              info@visionestimators.com
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="brand-link" href="index.html">
-            <img src="assets/images/app_logo.png" alt="Vision Estimators" width="40" height="40" />
-            <span class="brand-name"><span class="text-primary">Vision</span> Estimators</span>
-          </a>
-          <p class="brand-desc">Accurate construction estimation, quantity surveying, BOQ preparation, and tender support for builders and contractors worldwide.</p>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">SERVICES</h4>
-          <ul>
-            <li><a href="services.html">Construction Estimating</a></li>
-            <li><a href="service-earthwork-estimation.html">Earth Work Estimation</a></li>
-            <li><a href="service-roofing-estimation.html">Roofing Estimation</a></li>
-            <li><a href="service-sheet-metal-hvac.html">Sheet Metal &amp; HVAC</a></li>
-            <li><a href="service-quantity-takeoff.html">Quantity Take-Off</a></li>
-            <li><a href="service-tender-bid-management.html">Tender &amp; Bid Management</a></li>
-            <li><a href="service-drywall-estimation.html">Drywall Estimation</a></li>
-            <li><a href="service-plumbing-estimation.html">Plumbing Estimation</a></li>
-            <li><a href="service-electrical-estimation.html">Electrical Estimation</a></li>
-            <li><a href="service-facade-cladding.html">Facade &amp; Cladding</a></li>
-            <li><a href="service-structural-framing.html">Structural &amp; Framing</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">COMPANY</h4>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="why-us.html">Why Choose Us</a></li>
-            <li><a href="process.html">Our Process</a></li>
-            <li><a href="industries.html">Industries</a></li>
-            <li><a href="our-services.html#faq">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">CONTACT</h4>
-          <ul class="footer-contact">
-            <li><a href="mailto:info@visionestimators.com"><i data-icon="EnvelopeIcon" data-size="14"></i> info@visionestimators.com</a></li>
-            <li><a href="https://www.visionestimators.com"><i data-icon="GlobeAltIcon" data-size="14"></i> www.visionestimators.com</a></li>
-            <li class="address"><i data-icon="MapPinIcon" data-size="14"></i><span>Serving clients worldwide from India<br/>AU &middot; US &middot; UK &middot; CA &middot; NZ &middot; &amp; beyond</span></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Vision Estimators. All rights reserved.</p>
-        <p><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-service.html">Terms of Service</a></p>
+<section class="story" id="estimating-journey" data-story aria-labelledby="story-title">
+  <div class="story__sticky">
+    <div class="scene story__stage" data-scene="story">
+      <img class="scene-fallback" src="assets/img/story-3d.webp" alt="" width="1600" height="900" loading="lazy" decoding="async">
+      <div class="scene-labels" aria-hidden="true">
+        <div class="story__plan"></div>
+        <div class="story__dims"></div>
+        <div class="story__tags"><div class="tag" data-anchor="excavation" data-row="1"><div class="tag__chip"><span class="tag__k">EXCAVATION</span><span class="tag__v">1,080 m³</span></div></div><div class="tag" data-anchor="concrete" data-row="2"><div class="tag__chip"><span class="tag__k">CONCRETE</span><span class="tag__v">486 m³</span></div></div><div class="tag" data-anchor="rebar" data-row="3"><div class="tag__chip"><span class="tag__k">REINFORCEMENT</span><span class="tag__v">58.3 t</span></div></div><div class="tag" data-anchor="formwork" data-row="4"><div class="tag__chip"><span class="tag__k">FORMWORK</span><span class="tag__v">2,140 m²</span></div></div><div class="tag" data-anchor="blockwork" data-row="5"><div class="tag__chip"><span class="tag__k">BLOCKWORK</span><span class="tag__v">1,265 m²</span></div></div><div class="tag" data-anchor="glazing" data-row="6"><div class="tag__chip"><span class="tag__k">GLAZING</span><span class="tag__v">612 m²</span></div></div></div>
       </div>
     </div>
-  </footer>
+    <div class="container story__ui">
+      <div class="story__intro">
+        <p class="eyebrow">The estimating journey</p>
+        <h2 class="h2" id="story-title">From drawings to a tender-ready estimate</h2>
+      </div>
+      <ol class="story__steps"><li class="story-step is-active"><button class="story-step__h" type="button"><span class="story-step__n">01</span>Drawings</button><div class="story-step__p"><span>Architectural, structural and services drawings are reviewed together with the specification and scope.</span></div></li><li class="story-step"><button class="story-step__h" type="button"><span class="story-step__n">02</span>3D understanding</button><div class="story-step__p"><span>Plans, sections and elevations are read as one building — levels, elements and interfaces.</span></div></li><li class="story-step"><button class="story-step__h" type="button"><span class="story-step__n">03</span>Measurement</button><div class="story-step__p"><span>Every element is measured. Lengths, areas and volumes are taken off and checked against dimensions.</span></div></li><li class="story-step"><button class="story-step__h" type="button"><span class="story-step__n">04</span>Quantities</button><div class="story-step__p"><span>Quantities are organised by trade — excavation, concrete, reinforcement, formwork, masonry and glazing.</span></div></li><li class="story-step"><button class="story-step__h" type="button"><span class="story-step__n">05</span>Bill of Quantities</button><div class="story-step__p"><span>Measured quantities become a structured BOQ with clear descriptions and units, ready for pricing.</span></div></li><li class="story-step"><button class="story-step__h" type="button"><span class="story-step__n">06</span>Cost</button><div class="story-step__p"><span>Material, labour and plant rates are applied to each item to build a clear cost picture.</span></div></li><li class="story-step"><button class="story-step__h" type="button"><span class="story-step__n">07</span>Tender package</button><div class="story-step__p"><span>Summary, BOQ, takeoff records and clarifications — organised into a tender-ready package.</span></div></li></ol>
+      <div class="story__panels" aria-hidden="true">
+        <div class="panel panel--boq">
+          <div class="panel__head"><span class="panel__title">Bill of Quantities</span><span class="panel__meta">Illustrative · Rev A</span></div>
+          <table class="boq">
+            <thead><tr><th>Ref</th><th>Description</th><th class="num">Qty</th><th>Unit</th><th class="num c-cost">Rate</th><th class="num c-cost">Amount</th></tr></thead>
+            <tbody><tr data-row="1"><td>2.01</td><td>Excavation to reduced level</td><td class="num">1,080</td><td>m³</td><td class="num c-cost">18.50</td><td class="num c-cost">19,980</td></tr><tr data-row="2"><td>3.04</td><td>Reinforced concrete, suspended slabs</td><td class="num">486</td><td>m³</td><td class="num c-cost">245.00</td><td class="num c-cost">119,070</td></tr><tr data-row="3"><td>3.12</td><td>Reinforcement, high-yield bar</td><td class="num">58.3</td><td>t</td><td class="num c-cost">1,480.00</td><td class="num c-cost">86,284</td></tr><tr data-row="4"><td>3.20</td><td>Formwork to soffits</td><td class="num">2,140</td><td>m²</td><td class="num c-cost">42.00</td><td class="num c-cost">89,880</td></tr><tr data-row="5"><td>4.02</td><td>Blockwork walls, 200 mm</td><td class="num">1,265</td><td>m²</td><td class="num c-cost">64.00</td><td class="num c-cost">80,960</td></tr><tr data-row="6"><td>7.08</td><td>Glazed curtain walling</td><td class="num">612</td><td>m²</td><td class="num c-cost">395.00</td><td class="num c-cost">241,740</td></tr></tbody>
+            <tfoot><tr><td></td><td>Sub-total</td><td></td><td></td><td></td><td class="num c-cost boq__total">637,914</td></tr></tfoot>
+          </table>
+          <div class="cost-block"><div>
+            <div class="split-bar"><i></i><i></i><i></i></div>
+            <div class="split-legend"><span><i style="background:var(--cyan)"></i><b>Materials</b> 58%</span><span><i style="background:var(--blue)"></i><b>Labour</b> 31%</span><span><i style="background:#7d8cff"></i><b>Plant</b> 11%</span></div>
+          </div></div>
+          <p class="boq__note">Illustrative figures for demonstration only — not a quotation.</p>
+        </div>
+        <div class="panel panel--pkg">
+          <div class="panel__head"><span class="panel__title">Tender package</span><span class="panel__meta">Rev A</span></div>
+          <div class="pkg">
+            <div class="pkg__files">
+              <div class="pkg__file"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5"/></svg><div><b>Estimate summary</b><small>PDF · Cost summary &amp; basis</small></div><em>✓</em></div>
+              <div class="pkg__file"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 12h7M8.5 15.5h7M12 12v7"/></svg><div><b>Bill of Quantities</b><small>XLSX · Priced BOQ</small></div><em>✓</em></div>
+              <div class="pkg__file"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="1.5"/><path d="M3.5 12h7V3.5M10.5 16.5v4M14 12h6.5"/></svg><div><b>Takeoff records</b><small>PDF · Marked-up drawings</small></div><em>✓</em></div>
+              <div class="pkg__file"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4.5" width="14" height="16.5" rx="1.5"/><path d="M9 4.5V3h6v1.5M9 10h6M9 13.5h6M9 17h4"/></svg><div><b>Assumptions &amp; exclusions</b><small>PDF · Clarifications</small></div><em>✓</em></div>
+            </div>
+            <div class="pkg__stamp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.5 3.2 8.2 7.5 9.5 4.3-1.3 7.5-5 7.5-9.5V6z"/><path d="m8.8 12 2.3 2.3 4.2-4.3"/></svg> Ready for your review &amp; submission</div>
+          </div>
+        </div>
+      </div>
+      <div class="story__pipeline" aria-hidden="true">
+        <span class="pipe" data-pipe><i></i>DRAWINGS</span><span class="pipe-line"></span>
+        <span class="pipe" data-pipe><i></i>QUANTITIES</span><span class="pipe-line"></span>
+        <span class="pipe" data-pipe><i></i>COST</span><span class="pipe-line"></span>
+        <span class="pipe" data-pipe><i></i>ESTIMATE</span><span class="pipe-line"></span>
+        <span class="pipe" data-pipe><i></i>TENDER</span>
+      </div>
+      <p class="story__progress" aria-hidden="true">STEP <b data-story-count>01</b> / 07</p>
+    </div>
+  </div>
+</section>
 
-  <button class="scroll-top" aria-label="Scroll to top">
-    <i data-icon="ChevronDownIcon" data-size="20"></i>
-  </button>
+<section class="section grid-bg glow-top" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <header class="sec-head sec-head--split">
+      <div class="sec-head__main" data-reveal><p class="eyebrow">Services</p><h2 class="h2" id="services-title">Trade Estimating Services Built Around Your Scope</h2></div>
+      <p class="lead" data-reveal style="--d:120">Start with your trade — roofing, cladding, structural, electrical or plumbing — or hand us the whole building. Every estimate is measured from your drawings and set out ready for you to price and tender.</p>
+    </header>
+    <div class="svc-grid" data-stagger="50"><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-roofing-640.webp" alt="Roofers installing red metal roof sheeting" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">01</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.5 13.5 9 5h6l6.5 8.5z"/><path d="M9 5l-2 8.5M15 5l2 8.5M12 5v8.5"/><path d="M5 13.5v6h14v-6"/></svg></span>
+      <h3>Roofing Estimating</h3>
+      <p>Roofing material quantities and cost estimating.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-roofing-estimation.html" aria-label="Learn more about Roofing Estimating"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-cladding-640.webp" alt="House clad in fibre cement weatherboards" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">02</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16v16H4z"/><path d="M4 8h16M4 12h16M4 16h16M10 4v4M15 8v4M8 12v4M14 16v4"/></svg></span>
+      <h3>Cladding Estimating</h3>
+      <p>Wall cladding, façade panels, subframes, flashings and trims quantities and costs.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-cladding-estimating.html" aria-label="Learn more about Cladding Estimating"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-structural-640.webp" alt="Tower cranes above a high-rise frame under construction" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">03</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 4h12v3h-4.5v10H18v3H6v-3h4.5V7H6z"/></svg></span>
+      <h3>Structural Estimating</h3>
+      <p>Estimating support for structural and framing components.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-structural-framing.html" aria-label="Learn more about Structural Estimating"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-electrical-640.webp" alt="Cable trays and cable ladders carrying power cables along a concrete ceiling" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">04</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2.5 3.5 14H12l-1 7.5L20.5 10H12l1-7.5z"/></svg></span>
+      <h3>Electrical Estimating</h3>
+      <p>Lighting, power, cabling and switchboard quantities and costs.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-electrical-estimating.html" aria-label="Learn more about Electrical Estimating"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-plumbing-640.webp" alt="Pipefitters installing pipework through a wall in a building" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">05</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3.2 17.3 8.5a7.5 7.5 0 1 1-10.6 0z"/><path d="M9 14.5a3 3 0 0 0 3 3"/></svg></span>
+      <h3>Plumbing Estimating</h3>
+      <p>Fixtures, water supply, drainage and gas quantities and costs.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-plumbing-estimating.html" aria-label="Learn more about Plumbing Estimating"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-building-640.webp" alt="Multi-storey concrete-framed building under construction, with tower cranes" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">06</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 21V4.5A1.5 1.5 0 0 1 6 3h8a1.5 1.5 0 0 1 1.5 1.5V21"/><path d="M15.5 9H18a1.5 1.5 0 0 1 1.5 1.5V21M2.5 21h19M8 7h1M11 7h1M8 10.5h1M11 10.5h1M8 14h1M11 14h1M9 21v-3.5h2V21"/></svg></span>
+      <h3>Whole Building Estimating</h3>
+      <p>Every trade, from substructure to finishes and services, measured and priced in one complete estimate.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-whole-building-estimating.html" aria-label="Learn more about Whole Building Estimating"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-mep-640.webp" alt="Mechanical ductwork and services in a plant room" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">07</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9.6 4.6A2 2 0 1 1 11 8H2.5M12.6 19.4A2 2 0 1 0 14 16H2.5M17.7 7.7A2.5 2.5 0 1 1 19.5 12h-17"/></svg></span>
+      <h3>Mechanical Estimating</h3>
+      <p>HVAC ductwork, pipework and equipment quantities and costs.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-mechanical-estimating.html" aria-label="Learn more about Mechanical Estimating"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-concrete-640.webp" alt="Concrete building frame with shoring props supporting new floor slabs" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">08</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 20 7.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/><path d="M7.5 13.5h.01M9.5 16h.01M15 14.5h.01M16.5 11.5h.01"/></svg></span>
+      <h3>Concrete Estimating</h3>
+      <p>Concrete quantities, reinforcement and related construction quantities.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-concrete-estimating.html" aria-label="Learn more about Concrete Estimating"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-qto-640.webp" alt="Architectural floor plan with dimensions, a pen and a scale ruler" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">09</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="3.5" width="16" height="17" rx="1.5"/><path d="M8 7.5h5v4.5H8zM7.5 16h9M7.5 14.6v2.8M16.5 14.6v2.8"/></svg></span>
+      <h3>Quantity Takeoffs</h3>
+      <p>Accurate measurement and quantification from project drawings.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-quantity-takeoff.html" aria-label="Learn more about Quantity Takeoffs"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-material-640.webp" alt="Timber wall framing inside a building under construction" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">10</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3.5 20 7.5 12 11.5 4 7.5z"/><path d="m4 12 8 4 8-4"/><path d="m4 16.5 8 4 8-4"/></svg></span>
+      <h3>Material Takeoffs</h3>
+      <p>Detailed material quantities prepared from drawings and specifications.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-material-takeoff.html" aria-label="Learn more about Material Takeoffs"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-boq-640.webp" alt="Estimator reviewing a CAD floor plan on a laptop beside printed drawings" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">11</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="4" width="17" height="16" rx="1.5"/><path d="M3.5 9h17M3.5 14.5h17M9 9v11"/></svg></span>
+      <h3>BOQ Preparation</h3>
+      <p>Detailed Bills of Quantities organised for pricing and tendering.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-boq-preparation.html" aria-label="Learn more about BOQ Preparation"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-cost-640.webp" alt="Calculator and pen on a printed cost breakdown sheet" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">12</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 6.5h8V10H8zM8.5 14h.01M12 14h.01M15.5 14h.01M8.5 17.5h.01M12 17.5h.01M15.5 17.5h.01"/></svg></span>
+      <h3>Cost Estimating</h3>
+      <p>Material, labour and project cost estimating.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-cost-estimation.html" aria-label="Learn more about Cost Estimating"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-labour-640.webp" alt="Carpenter raising new timber rafters inside a house" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">13</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17.5h18M4.5 17.5v-1.8A7.5 7.5 0 0 1 12 8.2a7.5 7.5 0 0 1 7.5 7.5v1.8"/><path d="M10 8.4V5.5h4v2.9M8.2 11.2v3M15.8 11.2v3"/></svg></span>
+      <h3>Labour Estimating</h3>
+      <p>Labour quantities and cost analysis for construction activities.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-labour-estimation.html" aria-label="Learn more about Labour Estimating"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-tender-640.webp" alt="Project team reviewing tender documents around a meeting table" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">14</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21H11"/><path d="M14 3v5h5v3"/><path d="M8 9h3M8 12.5h5"/><circle cx="16.5" cy="16.5" r="4"/><path d="m14.8 16.6 1.2 1.2 2.3-2.4"/></svg></span>
+      <h3>Tender & Bid Support</h3>
+      <p>Estimating support to help contractors prepare competitive tenders.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-tender-bid-management.html" aria-label="Learn more about Tender & Bid Support"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-civil-640.webp" alt="Cable-stayed bridge under construction across a river" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">15</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 9.5h20M2 12.5h20M6 12.5V20M18 12.5V20M2 20h20"/><path d="M6 20a6 6 0 0 1 12 0"/></svg></span>
+      <h3>Civil Estimating</h3>
+      <p>Quantities and estimates for earthworks, roads, drainage, utilities and civil concrete.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-civil-estimating.html" aria-label="Learn more about Civil Estimating"></a>
+  </article><article class="svc-card spot" data-tilt="4" data-reveal>
+    <div class="svc-card__media"><img src="assets/img/svc-earthwork-640.webp" alt="Hydraulic excavator on a graded earthworks site" width="640" height="480" loading="lazy" decoding="async"><span class="svc-card__n">16</span></div>
+    <div class="svc-card__body">
+      <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="16.5" width="11" height="3" rx="1.5"/><path d="M4 16.5V12h4.5l1.5 2.5v2M9 13l5-6.5 5 3.5M19 10v3.5h-2.5l-1-1.5"/></svg></span>
+      <h3>Earthworks Estimating</h3>
+      <p>Cut, fill, excavation, backfill and earthworks quantity calculations.</p>
+      <span class="link-arrow">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+    <a class="svc-card__link" href="service-earthwork-estimation.html" aria-label="Learn more about Earthworks Estimating"></a>
+  </article></div>
+  </div>
+</section>
 
-  <script src="js/icons.js"></script>
-  <script src="js/main.js"></script>
+<section class="section section--alt section--line" id="contractors" aria-labelledby="contractors-title">
+  <div class="container ctr">
+    <div class="ctr__copy">
+      <div data-reveal><p class="eyebrow">Who we work for</p></div>
+      <h2 class="h2" id="contractors-title" data-reveal>Built for Contractors <span class="accent">&amp; Subcontractors</span></h2>
+      <p class="lead" data-reveal>Whether you are pricing one trade package or the whole job, we measure your scope from the drawings and set out quantities in the units you work in — ready for your rates, your template and your tender.</p>
+      <ul class="ctr-list" data-stagger="60"><li data-reveal><a class="ctr-item" href="service-roofing-estimation.html"><span class="ctr-item__n" aria-hidden="true">01</span><div class="ctr-item__body"><h3>Roofing contractors</h3><p>Pitch-adjusted roof areas in m², with ridges, valleys, flashings and gutters in lm.</p></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li data-reveal><a class="ctr-item" href="service-cladding-estimating.html"><span class="ctr-item__n" aria-hidden="true">02</span><div class="ctr-item__body"><h3>Cladding &amp; façade contractors</h3><p>Cladding areas in m² net of openings, plus subframes, trims and flashings in lm.</p></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li data-reveal><a class="ctr-item" href="service-structural-framing.html"><span class="ctr-item__n" aria-hidden="true">03</span><div class="ctr-item__body"><h3>Structural steel &amp; framing contractors</h3><p>Steel tonnage by member type, with purlins, girts and framing in lm and connection counts.</p></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li data-reveal><a class="ctr-item" href="service-electrical-estimating.html"><span class="ctr-item__n" aria-hidden="true">04</span><div class="ctr-item__body"><h3>Electrical contractors</h3><p>Fitting and device counts, with cabling, conduit and cable tray in lm.</p></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li data-reveal><a class="ctr-item" href="service-plumbing-estimating.html"><span class="ctr-item__n" aria-hidden="true">05</span><div class="ctr-item__body"><h3>Plumbing contractors</h3><p>Pipework in lm by service, with fixture, valve and fitting counts.</p></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li data-reveal><a class="ctr-item" href="service-whole-building-estimating.html"><span class="ctr-item__n" aria-hidden="true">06</span><div class="ctr-item__body"><h3>Builders &amp; head contractors</h3><p>Whole building estimates — a full BOQ across every trade, from substructure to services.</p></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li></ul>
+      <div class="btn-row" data-reveal><a class="btn btn--primary" href="contact.html">Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn--ghost" href="services.html">All Services</a></div>
+    </div>
+    <div class="ctr__visual" data-reveal>
+      <div class="ctr__hud" aria-hidden="true"><span><b>QTO</b> · By trade</span><span>m² · lm · t · nr</span></div>
+      <div class="ctr__stack">
+        <div class="ctr-card">
+          <div class="panel__head"><span class="panel__title">Takeoff summary</span><span class="panel__meta">Illustrative</span></div>
+          <input class="visually-hidden" type="radio" name="ctr-trade" id="ctr-roofing" checked><input class="visually-hidden" type="radio" name="ctr-trade" id="ctr-cladding"><input class="visually-hidden" type="radio" name="ctr-trade" id="ctr-structural"><input class="visually-hidden" type="radio" name="ctr-trade" id="ctr-electrical"><input class="visually-hidden" type="radio" name="ctr-trade" id="ctr-plumbing"><input class="visually-hidden" type="radio" name="ctr-trade" id="ctr-building">
+          <div class="ctr-tabs"><label for="ctr-roofing">Roofing</label><label for="ctr-cladding">Cladding</label><label for="ctr-structural">Structural</label><label for="ctr-electrical">Electrical</label><label for="ctr-plumbing">Plumbing</label><label for="ctr-building">Whole building</label></div>
+          <div class="ctr-sheets">
+            <table class="ctr-sheet ctr-sheet--roofing"><caption class="visually-hidden">Illustrative roofing takeoff</caption><thead><tr><th scope="col">Item</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th></tr></thead><tbody><tr><td>Roof area (pitch-adjusted)</td><td class="num">1,248</td><td class="u">m²</td></tr><tr><td>Ridges &amp; hips</td><td class="num">86</td><td class="u">lm</td></tr><tr><td>Valleys</td><td class="num">42</td><td class="u">lm</td></tr><tr><td>Flashings</td><td class="num">210</td><td class="u">lm</td></tr><tr><td>Gutters</td><td class="num">164</td><td class="u">lm</td></tr><tr><td>Downpipes</td><td class="num">12</td><td class="u">nr</td></tr></tbody><tfoot><tr><td colspan="3">Measured from roof plans, sections and elevations</td></tr></tfoot></table>
+            <table class="ctr-sheet ctr-sheet--cladding"><caption class="visually-hidden">Illustrative cladding takeoff</caption><thead><tr><th scope="col">Item</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th></tr></thead><tbody><tr><td>Wall cladding (net of openings)</td><td class="num">1,860</td><td class="u">m²</td></tr><tr><td>Openings deducted</td><td class="num">312</td><td class="u">m²</td></tr><tr><td>Subframe &amp; battens</td><td class="num">2,940</td><td class="u">lm</td></tr><tr><td>External corners</td><td class="num">148</td><td class="u">lm</td></tr><tr><td>Window &amp; door trims</td><td class="num">486</td><td class="u">lm</td></tr><tr><td>Head &amp; sill flashings</td><td class="num">264</td><td class="u">lm</td></tr></tbody><tfoot><tr><td colspan="3">Measured from elevations, sections and window schedules</td></tr></tfoot></table>
+            <table class="ctr-sheet ctr-sheet--structural"><caption class="visually-hidden">Illustrative structural takeoff</caption><thead><tr><th scope="col">Item</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th></tr></thead><tbody><tr><td>Steel beams &amp; columns</td><td class="num">64.2</td><td class="u">t</td></tr><tr><td>Purlins &amp; girts</td><td class="num">3,120</td><td class="u">lm</td></tr><tr><td>Bracing</td><td class="num">4.6</td><td class="u">t</td></tr><tr><td>Base plates</td><td class="num">96</td><td class="u">nr</td></tr><tr><td>Connections</td><td class="num">412</td><td class="u">nr</td></tr><tr><td>Holding-down bolts</td><td class="num">384</td><td class="u">nr</td></tr></tbody><tfoot><tr><td colspan="3">Measured from structural plans, sections and member schedules</td></tr></tfoot></table>
+            <table class="ctr-sheet ctr-sheet--electrical"><caption class="visually-hidden">Illustrative electrical takeoff</caption><thead><tr><th scope="col">Item</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th></tr></thead><tbody><tr><td>Light fittings</td><td class="num">486</td><td class="u">nr</td></tr><tr><td>Power outlets</td><td class="num">624</td><td class="u">nr</td></tr><tr><td>Switches &amp; controls</td><td class="num">212</td><td class="u">nr</td></tr><tr><td>Cabling</td><td class="num">18,400</td><td class="u">lm</td></tr><tr><td>Cable tray &amp; ladder</td><td class="num">640</td><td class="u">lm</td></tr><tr><td>Distribution boards</td><td class="num">8</td><td class="u">nr</td></tr></tbody><tfoot><tr><td colspan="3">Measured from lighting and power layouts and schematics</td></tr></tfoot></table>
+            <table class="ctr-sheet ctr-sheet--plumbing"><caption class="visually-hidden">Illustrative plumbing takeoff</caption><thead><tr><th scope="col">Item</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th></tr></thead><tbody><tr><td>Sanitary fixtures</td><td class="num">148</td><td class="u">nr</td></tr><tr><td>Water supply pipework</td><td class="num">2,460</td><td class="u">lm</td></tr><tr><td>Drainage pipework</td><td class="num">1,180</td><td class="u">lm</td></tr><tr><td>Stormwater pipework</td><td class="num">640</td><td class="u">lm</td></tr><tr><td>Gas pipework</td><td class="num">220</td><td class="u">lm</td></tr><tr><td>Hot water units</td><td class="num">6</td><td class="u">nr</td></tr></tbody><tfoot><tr><td colspan="3">Measured from plumbing and drainage layouts and fixture schedules</td></tr></tfoot></table>
+            <table class="ctr-sheet ctr-sheet--building"><caption class="visually-hidden">Illustrative whole building summary</caption><thead><tr><th scope="col">Item</th><th scope="col" class="num">Qty</th><th scope="col">Unit</th></tr></thead><tbody><tr><td>Concrete</td><td class="num">486</td><td class="u">m³</td></tr><tr><td>Structural steel</td><td class="num">64.2</td><td class="u">t</td></tr><tr><td>Roofing</td><td class="num">1,248</td><td class="u">m²</td></tr><tr><td>Cladding</td><td class="num">1,860</td><td class="u">m²</td></tr><tr><td>Electrical points</td><td class="num">1,322</td><td class="u">nr</td></tr><tr><td>Plumbing fixtures</td><td class="num">148</td><td class="u">nr</td></tr></tbody><tfoot><tr><td colspan="3">Full BOQ across every trade, from substructure to services</td></tr></tfoot></table>
+          </div>
+          <p class="boq__note">Illustrative figures — not a quotation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="industries" aria-labelledby="ind-title">
+  <div class="container">
+    <header class="sec-head sec-head--split">
+      <div class="sec-head__main" data-reveal><p class="eyebrow">Industries</p><h2 class="h2" id="ind-title">Estimating Across Construction</h2></div>
+      <p class="lead" data-reveal style="--d:120">From single homes to commercial, industrial and warehouse buildings — trade and whole building estimates shaped around the type of project and the way it is built.</p>
+    </header>
+    <div class="ind-grid"><article class="ind-card" data-tilt="3" data-reveal>
+  <div class="ind-card__media" data-parallax><img src="assets/img/ind-residential-1200.webp" srcset="assets/img/ind-residential-640.webp 640w, assets/img/ind-residential-1200.webp 1200w" sizes="(max-width: 1000px) 100vw, 50vw" alt="" width="1200" height="900" loading="lazy" decoding="async"></div>
+  <span class="ind-card__n">01</span>
+  <span class="ind-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+  <div class="ind-card__body">
+    <h3>Residential</h3>
+    <p>Houses, townhouses, multi-unit and apartment projects.</p>
+    <div class="ind-card__tags"><span class="chip">Roofing</span><span class="chip">Cladding</span><span class="chip">Whole building</span></div>
+  </div>
+  <a class="ind-card__link" href="industries.html#residential" aria-label="Residential estimating"></a>
+</article><article class="ind-card" data-tilt="3" data-reveal>
+  <div class="ind-card__media" data-parallax><img src="assets/img/ind-commercial-640.webp" srcset="assets/img/ind-commercial-640.webp 640w, assets/img/ind-commercial-1200.webp 1200w" sizes="(max-width: 560px) 100vw, (max-width: 1000px) 50vw, 25vw" alt="" width="1200" height="900" loading="lazy" decoding="async"></div>
+  <span class="ind-card__n">02</span>
+  <span class="ind-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+  <div class="ind-card__body">
+    <h3>Commercial</h3>
+    <p>Offices, retail, hospitality and fit-out projects.</p>
+    <div class="ind-card__tags"><span class="chip">Electrical</span><span class="chip">Plumbing</span><span class="chip">Tenders</span></div>
+  </div>
+  <a class="ind-card__link" href="industries.html#commercial" aria-label="Commercial estimating"></a>
+</article><article class="ind-card" data-tilt="3" data-reveal>
+  <div class="ind-card__media" data-parallax><img src="assets/img/ind-buildings-640.webp" srcset="assets/img/ind-buildings-640.webp 640w, assets/img/ind-buildings-1200.webp 1200w" sizes="(max-width: 560px) 100vw, (max-width: 1000px) 50vw, 25vw" alt="" width="1200" height="900" loading="lazy" decoding="async"></div>
+  <span class="ind-card__n">03</span>
+  <span class="ind-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+  <div class="ind-card__body">
+    <h3>Buildings</h3>
+    <p>Multi-storey structures, frames and envelopes.</p>
+    <div class="ind-card__tags"><span class="chip">Structural</span><span class="chip">Cladding</span></div>
+  </div>
+  <a class="ind-card__link" href="industries.html#buildings" aria-label="Buildings estimating"></a>
+</article><article class="ind-card" data-tilt="3" data-reveal>
+  <div class="ind-card__media" data-parallax><img src="assets/img/ind-industrial-640.webp" srcset="assets/img/ind-industrial-640.webp 640w, assets/img/ind-industrial-1200.webp 1200w" sizes="(max-width: 560px) 100vw, (max-width: 1000px) 50vw, 25vw" alt="" width="1200" height="900" loading="lazy" decoding="async"></div>
+  <span class="ind-card__n">04</span>
+  <span class="ind-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+  <div class="ind-card__body">
+    <h3>Industrial</h3>
+    <p>Factories, plants and industrial facilities.</p>
+    <div class="ind-card__tags"><span class="chip">Structural steel</span><span class="chip">Electrical</span></div>
+  </div>
+  <a class="ind-card__link" href="industries.html#industrial" aria-label="Industrial estimating"></a>
+</article><article class="ind-card" data-tilt="3" data-reveal>
+  <div class="ind-card__media" data-parallax><img src="assets/img/ind-warehouses-640.webp" srcset="assets/img/ind-warehouses-640.webp 640w, assets/img/ind-warehouses-1200.webp 1200w" sizes="(max-width: 560px) 100vw, (max-width: 1000px) 50vw, 25vw" alt="" width="1200" height="900" loading="lazy" decoding="async"></div>
+  <span class="ind-card__n">05</span>
+  <span class="ind-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+  <div class="ind-card__body">
+    <h3>Warehouses</h3>
+    <p>Logistics, storage and distribution buildings.</p>
+    <div class="ind-card__tags"><span class="chip">Portal frames</span><span class="chip">Roofing</span></div>
+  </div>
+  <a class="ind-card__link" href="industries.html#warehouses" aria-label="Warehouses estimating"></a>
+</article><article class="ind-card" data-tilt="3" data-reveal>
+  <div class="ind-card__media" data-parallax><img src="assets/img/ind-civil-640.webp" srcset="assets/img/ind-civil-640.webp 640w, assets/img/ind-civil-1200.webp 1200w" sizes="(max-width: 560px) 100vw, (max-width: 1000px) 50vw, 25vw" alt="" width="1200" height="900" loading="lazy" decoding="async"></div>
+  <span class="ind-card__n">06</span>
+  <span class="ind-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+  <div class="ind-card__body">
+    <h3>Civil & Infrastructure</h3>
+    <p>Earthworks, drainage, utilities and structures.</p>
+    <div class="ind-card__tags"><span class="chip">Earthworks</span><span class="chip">Drainage</span></div>
+  </div>
+  <a class="ind-card__link" href="industries.html#civil" aria-label="Civil & Infrastructure estimating"></a>
+</article><article class="ind-card" data-tilt="3" data-reveal>
+  <div class="ind-card__media" data-parallax><img src="assets/img/ind-roads-640.webp" srcset="assets/img/ind-roads-640.webp 640w, assets/img/ind-roads-1200.webp 1200w" sizes="(max-width: 560px) 100vw, (max-width: 1000px) 50vw, 25vw" alt="" width="1200" height="900" loading="lazy" decoding="async"></div>
+  <span class="ind-card__n">07</span>
+  <span class="ind-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+  <div class="ind-card__body">
+    <h3>Roads & Highways</h3>
+    <p>Pavements, intersections, kerbs and road drainage.</p>
+    <div class="ind-card__tags"><span class="chip">Pavements</span><span class="chip">Kerbs</span></div>
+  </div>
+  <a class="ind-card__link" href="industries.html#roads" aria-label="Roads & Highways estimating"></a>
+</article><article class="ind-card" data-tilt="3" data-reveal>
+  <div class="ind-card__media" data-parallax><img src="assets/img/ind-developments-1200.webp" srcset="assets/img/ind-developments-640.webp 640w, assets/img/ind-developments-1200.webp 1200w" sizes="(max-width: 1000px) 100vw, 50vw" alt="" width="1200" height="900" loading="lazy" decoding="async"></div>
+  <span class="ind-card__n">08</span>
+  <span class="ind-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+  <div class="ind-card__body">
+    <h3>Developments</h3>
+    <p>Subdivisions, master-planned and mixed-use sites.</p>
+    <div class="ind-card__tags"><span class="chip">Feasibility</span><span class="chip">Staging</span></div>
+  </div>
+  <a class="ind-card__link" href="industries.html#developments" aria-label="Developments estimating"></a>
+</article></div>
+  </div>
+</section>
+
+<section class="section section--alt section--line" id="dedicated-estimator" aria-labelledby="de-title">
+  <div class="container de">
+    <div data-reveal><div class="ws" data-ws data-inview aria-hidden="true">
+  <div class="ws__glow"></div>
+  <div class="ws__stage">
+    <div class="ws__panel ws__sheet">
+      <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice">
+        <path class="plan-thin" d="M10 10h380v220H10zM16 16h368v208H16z"/>
+        <path class="plan-thin" d="M40 38v160M100 38v160M160 38v160M220 38v160M280 38v160M30 60h270M30 118h270M30 176h270" stroke-dasharray="2 3"/>
+        <path class="plan-line" d="M40 60h240v116H40zM43 63h234v110H43zM40 118h96M150 118h130M160 63v55M220 118v55M100 118v55"/>
+        <path class="plan-line" d="M136 118a14 14 0 0 1 14-14M220 150a14 14 0 0 0 14 14"/>
+        <path class="plan-dim" d="M40 196h240M40 191v10M280 191v10M100 193l-4 6M160 193l-4 6M220 193l-4 6"/>
+        <text class="plan-text" x="160" y="212" text-anchor="middle">24.00</text>
+        <path class="plan-dim" d="M300 60v116M295 60h10M295 176h10"/>
+        <text class="plan-text" x="312" y="122">11.60</text>
+        <path class="plan-thin" d="M300 190h84v34h-84zM300 204h84M342 190v14"/>
+        <text class="plan-label" x="305" y="200">A-102</text><text class="plan-label" x="347" y="200">1:100</text>
+        <text class="plan-label" x="305" y="216">LEVEL 02 PLAN</text>
+      </svg>
+    </div>
+    <div class="ws__panel ws__takeoff">
+      <div class="win__bar"><i></i><i></i><i></i><b>Takeoff · L02</b><em>Area tool</em></div>
+      <svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid meet">
+        <path class="plan-thin" d="M0 30h300M0 60h300M0 90h300M0 120h300M50 0v150M100 0v150M150 0v150M200 0v150M250 0v150"/>
+        <path class="plan-line" d="M30 20h240v112H30zM30 76h100M145 76h125M150 20v56M200 76v56M90 76v56"/>
+        <path class="measure-poly" pathLength="1" d="M152 22h116v52H152z"/>
+        <path class="measure-poly" pathLength="1" d="M32 78h56v52H32z" style="transition-delay:1s"/>
+        <circle cx="152" cy="22" r="3" fill="#45d3ff"/><circle cx="268" cy="22" r="3" fill="#45d3ff"/><circle cx="268" cy="74" r="3" fill="#45d3ff"/><circle cx="152" cy="74" r="3" fill="#45d3ff"/>
+      </svg>
+      <span class="tooltip-3d">Area 248.6 m²</span>
+    </div>
+    <div class="ws__panel ws__boq">
+      <div class="win__bar"><i></i><i></i><i></i><b>BOQ · Section 3</b></div>
+      <table><tbody>
+        <tr><td>3.01 Excavation</td><td>1,080 m³</td></tr>
+        <tr><td>3.04 Concrete slab</td><td>486 m³</td></tr>
+        <tr><td>3.12 Reinforcement</td><td>58.3 t</td></tr>
+        <tr><td>3.20 Formwork</td><td>2,140 m²</td></tr>
+      </tbody></table>
+    </div>
+    <div class="ws__panel ws__pricing">
+      <div class="win__bar"><i></i><i></i><i></i><b>Pricing database</b></div>
+      <div class="price-row">Concrete 32 MPa<i style="--w:78%"></i><b>245.00</b></div>
+      <div class="price-row">Reinforcement<i style="--w:92%"></i><b>1,480</b></div>
+      <div class="price-row">Formwork<i style="--w:44%"></i><b>42.00</b></div>
+      <div class="price-row">Labour · crew<i style="--w:60%"></i><b>68.50</b></div>
+    </div>
+    <div class="ws__panel ws__dash">
+      <div class="win__bar"><i></i><i></i><i></i><b>Project dashboard</b></div>
+      <div class="dash-mini">
+        <svg class="ring" viewBox="0 0 36 36"><circle class="bg" cx="18" cy="18" r="15.9"/><circle class="fg" cx="18" cy="18" r="15.9" pathLength="100"/><text x="18" y="21">72%</text></svg>
+        <div class="bars">
+          <span>Drawings reviewed<i style="--w:100%"></i></span>
+          <span>Quantities<i style="--w:72%"></i></span>
+          <span>Pricing<i style="--w:40%"></i></span>
+        </div>
+      </div>
+    </div>
+    <figure class="ws__panel ws__person">
+      <img src="assets/img/estimator-640.webp" alt="" width="640" height="480" loading="lazy" decoding="async">
+      <figcaption>Your estimator<span>Working on L02</span></figcaption>
+    </figure>
+  </div>
+</div></div>
+    <div class="de__copy">
+      <div data-reveal><p class="eyebrow">Dedicated estimator</p></div>
+      <h2 class="h2" id="de-title" data-reveal>Your Dedicated Estimator.<br><span class="accent">Part of Your Team.</span></h2>
+      <p class="lead" data-reveal>Instead of outsourcing individual estimates whenever you need them, work with a dedicated estimating professional who becomes familiar with your projects, drawings, standards, pricing requirements and workflow.</p>
+      <p class="de__sub" data-reveal>Dedicated estimating support</p>
+      <ul class="checklist" data-stagger="50"><li data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Dedicated estimating professional</li><li data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Project-specific knowledge</li><li data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Quantity takeoffs</li><li data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>BOQ preparation</li><li data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Material and labour analysis</li><li data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Tender support</li><li data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Ongoing project assistance</li><li data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Faster estimating workflow</li></ul>
+      <div class="btn-row" data-reveal><a class="btn btn--primary" href="contact.html?service=dedicated-estimator">Discuss Your Dedicated Estimator <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="link-arrow" href="dedicated-estimator.html">How it works <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--line" id="where-we-work" aria-labelledby="where-title">
+  <div class="container">
+    <header class="sec-head sec-head--split">
+      <div class="sec-head__main" data-reveal><p class="eyebrow">Where we work</p><h2 class="h2" id="where-title">Serving Clients Worldwide</h2></div>
+      <p class="lead" data-reveal style="--d:120">We work with contractors, subcontractors and builders in Australia, the USA, the UK, Canada, New Zealand and beyond — measuring to the method, units and format your market expects.</p>
+    </header>
+    <div class="market-grid" data-stagger="60"><article class="tile market" data-reveal><span class="market__code">AU</span><h3>Australia</h3><p>ASMM (AIQS) method</p><span class="chip">Metric · AUD</span></article><article class="tile market" data-reveal><span class="market__code">US</span><h3>United States</h3><p>CSI MasterFormat divisions</p><span class="chip">Imperial · USD</span></article><article class="tile market" data-reveal><span class="market__code">UK</span><h3>United Kingdom</h3><p>NRM2 (RICS) rules</p><span class="chip">Metric · GBP</span></article><article class="tile market" data-reveal><span class="market__code">CA</span><h3>Canada</h3><p>MasterFormat / CIQS method</p><span class="chip">Metric or imperial · CAD</span></article><article class="tile market" data-reveal><span class="market__code">NZ</span><h3>New Zealand</h3><p>NZS 4202 method</p><span class="chip">Metric · NZD</span></article></div>
+    <div class="grid-3" style="margin-top:16px" data-stagger="80">
+      <article class="tile" data-reveal><span class="tile__n">01 · WHAT WE WORK FROM</span><h3>Your drawings &amp; documents</h3><p>Architectural, structural and services drawing sets, specifications, schedules and addenda.</p><div class="chip-row"><span class="chip">PDF</span><span class="chip">DWG / DXF</span><span class="chip">Specs</span><span class="chip">Schedules</span><span class="chip">Addenda</span></div></article>
+      <article class="tile" data-reveal><span class="tile__n">02 · HOW WE MEASURE</span><h3>Digital takeoff</h3><p>Quantities measured on screen in industry-standard takeoff and CAD tools, cross-checked against drawing dimensions, with every item referenced to its sheet.</p><div class="chip-row"><span class="chip">On-screen takeoff</span><span class="chip">Sheet references</span><span class="chip">Dimension checks</span><span class="chip">Metric / imperial</span><span class="chip">Checked before delivery</span></div></article>
+      <article class="tile" data-reveal><span class="tile__n">03 · WHAT YOU RECEIVE</span><h3>Tender-ready deliverables</h3><p>Organised, checkable outputs your team can price, review and submit with confidence.</p><div class="chip-row"><span class="chip">Excel BOQ</span><span class="chip">Marked-up PDFs</span><span class="chip">Trade breakdowns</span><span class="chip">Assumptions</span><span class="chip">Your template</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt section--line" id="why-us" aria-labelledby="why-title">
+  <div class="container">
+    <header class="sec-head sec-head--split">
+      <div class="sec-head__main" data-reveal><p class="eyebrow">Why choose us</p><h2 class="h2" id="why-title">Estimating You Can Build a Decision On</h2></div>
+      <p class="lead" data-reveal style="--d:120">Clear methods, organised deliverables and people who understand how construction work is measured, priced and built.</p>
+    </header>
+    <div class="why-grid" data-stagger="80"><article class="why-card" data-reveal>
+  <div class="why-card__top"><span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></span><span class="why-card__n">01</span></div>
+  <h3>Accuracy</h3><p>Detailed takeoffs with every quantity traceable to the drawings — and every estimate checked before delivery.</p>
+</article><article class="why-card" data-reveal>
+  <div class="why-card__top"><span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 17a8.5 8.5 0 1 1 15 0"/><path d="m12 13.5 4-4.5"/><circle cx="12" cy="13.5" r="1.2"/></svg></span><span class="why-card__n">02</span></div>
+  <h3>Speed</h3><p>Standard estimates typically within 48 hours. For larger or complex projects, we confirm the delivery date after scope review, before work begins.</p>
+</article><article class="why-card" data-reveal>
+  <div class="why-card__top"><span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 21V3.5M6 3.5h14.5M6 7h4.5L6 3.5M18 3.5V9"/><rect x="16.2" y="9" width="3.6" height="3" rx=".5"/><path d="M3 21h7M6 11h2M6 14.5h2M6 18h2"/></svg></span><span class="why-card__n">03</span></div>
+  <h3>Construction Understanding</h3><p>Engineering-qualified estimators who work from your scope and drawings and understand how the work is actually built.</p>
+</article><article class="why-card" data-reveal>
+  <div class="why-card__top"><span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="8" r="3.5"/><path d="M3.5 20a6.5 6.5 0 0 1 11.3-4.4"/><path d="m15 18.5 2 2 4-4"/></svg></span><span class="why-card__n">04</span></div>
+  <h3>Dedicated Support</h3><p>Work with an estimating professional who understands your requirements.</p>
+</article><article class="why-card" data-reveal>
+  <div class="why-card__top"><span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4.5" width="14" height="16.5" rx="1.5"/><path d="M9 4.5V3h6v1.5M9 10h6M9 13.5h6M9 17h4"/></svg></span><span class="why-card__n">05</span></div>
+  <h3>Clear Deliverables</h3><p>Formula-linked Excel BOQs, marked-up PDF drawings and cost breakdowns that are easy to review.</p>
+</article><article class="why-card" data-reveal>
+  <div class="why-card__top"><span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg></span><span class="why-card__n">06</span></div>
+  <h3>Flexible Support</h3><p>Support for individual projects or ongoing estimating requirements.</p>
+</article></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS — reusable block. Add verified client testimonials (with written permission) and remove the comment markers to enable.
+<section class="section" aria-labelledby="testimonials-title">
+  <div class="container">
+    <header class="sec-head sec-head--center"><p class="eyebrow">Client feedback</p><h2 class="h2" id="testimonials-title">What Clients Say</h2></header>
+    <div class="grid-3">
+      <figure class="tile"><blockquote><p>"[Verified testimonial text]"</p></blockquote><figcaption class="subtle">[Name] — [Role], [Company]</figcaption></figure>
+    </div>
+  </div>
+</section>
+-->
+
+<section class="final" aria-labelledby="final-title">
+  <div class="scene final__scene" data-scene="cta" aria-hidden="true">
+    <img class="scene-fallback" src="assets/img/cta-3d.webp" alt="" width="1600" height="900" loading="lazy" decoding="async">
+  </div>
+  <div class="container final__inner">
+    <p class="eyebrow" data-reveal>Start your estimate</p>
+    <h2 class="final__title" id="final-title" data-reveal>Have a Project<br><span class="accent">to Estimate?</span></h2>
+    <p class="lead" data-reveal style="--d:100">Send us your drawings and project requirements. Our estimating team will review your scope, recommend the right estimating support and confirm the delivery date before work begins.</p>
+    <div class="btn-row" style="justify-content:center;--d:180" data-reveal>
+      <a class="btn btn--primary btn--lg" href="contact.html">Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--ghost btn--lg" href="contact.html?service=dedicated-estimator">Talk to an Estimator</a>
+    </div>
+    <p class="phase" aria-hidden="true"><span data-phase>PLAN</span><i>→</i><span data-phase>MEASURE</span><i>→</i><span data-phase>QUANTIFY</span><i>→</i><span data-phase>COST</span><i>→</i><span data-phase>ESTIMATE</span><i>→</i><span data-phase>BUILD</span></p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="Vision Estimators — home"><img class="brand__logo" src="assets/img/logo-white.png" alt="Vision Estimators" width="635" height="132" loading="lazy" decoding="async"></a>
+        <p>Trade estimating and takeoffs for contractors and subcontractors — roofing, cladding, structural, electrical, plumbing and whole building estimates.</p>
+        <div><a class="btn btn--primary btn--sm" href="contact.html">Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+      <div>
+        <p class="footer__h">Services</p>
+        <ul class="footer__list">
+          <li><a href="service-roofing-estimation.html">Roofing Estimating</a></li>
+          <li><a href="service-cladding-estimating.html">Cladding Estimating</a></li>
+          <li><a href="service-structural-framing.html">Structural Estimating</a></li>
+          <li><a href="service-electrical-estimating.html">Electrical Estimating</a></li>
+          <li><a href="service-plumbing-estimating.html">Plumbing Estimating</a></li>
+          <li><a href="service-whole-building-estimating.html">Whole Building Estimating</a></li>
+          <li><a href="dedicated-estimator.html">Dedicated Estimator</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__h">Company</p>
+        <ul class="footer__list">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__h">Contact</p>
+        <ul class="footer__list">
+          <li><a class="contact-line" href="mailto:info@visionestimators.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg><span>info@visionestimators.com</span></a></li>
+          <li><a class="contact-line" href="https://www.google.com/maps/search/?api=1&amp;query=LP+Tower%2C+Hitech+City+Road%2C+Madhapur%2C+Hyderabad+500081" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Madhapur, Hyderabad, India</span></a></li>
+          <li><span class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.3 2.4 3.5 5.2 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.2-3.5-8.5s1.2-6.1 3.5-8.5z"/></svg><span>Serving AU · US · UK · CA · NZ</span></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; <span data-year>2026</span> Vision Estimators. All Rights Reserved.</span>
+      <nav class="footer__legal" aria-label="Legal"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></nav>
+    </div>
+  </div>
+  <div class="footer__word" aria-hidden="true">VISION</div>
+</footer>
+<div class="sticky-cta" role="region" aria-label="Quick actions">
+  <a class="btn btn--primary" href="contact.html">Get a Free Estimate</a>
+  <a class="btn btn--ghost" href="contact.html?service=dedicated-estimator" aria-label="Talk to an estimator"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5.5h16v10H9.5L5 19.5v-4H4z"/><path d="M8 10.5h8"/></svg></a>
+</div>
+<script src="js/main.js" defer></script>
 </body>
 </html>
